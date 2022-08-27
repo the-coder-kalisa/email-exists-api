@@ -13,12 +13,12 @@ app.get("/", (req, res) => {
   }
   emailExistence.check(email, (error, response) => {
     if (error) {
-      return res.status(400).send(error);
+      return res.status(200).send(true);
     }
     if (response) {
-      return res.status(200).send("Email is available");
+      return res.status(200).send(true);
     }
-    return res.status(400).send("Email not found");
+    return res.status(400).send(false);
   });
 });
 const server = http.createServer(app);
