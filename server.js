@@ -43,7 +43,7 @@ app.post("/pdf", (req, res) => {
   } else {
     client.convertUrlToFile(pdf, createRandomname(), function (err, fileName) {
       if (err) return res.status(400).send("something wen wrong", err);
-      res.status(200).send(req.hostname + "/" + fileName);
+      res.status(200).send("https://email-existence-api.herokuapp.com/"+ "/" + fileName);
     });
   }
 });
