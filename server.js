@@ -3,7 +3,7 @@ const express = require("express");
 const emailExistence = require("email-existence");
 const app = express();
 const PORT = process.env.PORT || 5000;
-app.get("/check", (req, res) => {
+app.get("/", (req, res) => {
   const { email } = req.query;
   if (!email) {
     return res.status(400).send("enter your email");
