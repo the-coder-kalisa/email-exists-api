@@ -1,0 +1,30 @@
+{
+  "name": "email-exists-api",
+  "version": "1.0.0",
+  "description": "this is api to check if email exists",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-coder-kalisa/email-exists-api.git"
+  },
+  "keywords": [
+    "email",
+    "email-existence",
+    "api"
+  ],
+  "author": "KALISA INEZA Giovanni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-coder-kalisa/email-exists-api/issues"
+  },
+  "homepage": "https://github.com/the-coder-kalisa/email-exists-api#readme",
+  "dependencies": {
+    "async": "^3.2.4",
+    "email-existence": "^0.1.6",
+    "express": "^4.18.1"
+  }
+}
